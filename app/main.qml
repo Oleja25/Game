@@ -1,4 +1,5 @@
 import QtQuick 2.0
+import QtQuick.Controls 2.5
 
 Rectangle {
     id: main_window
@@ -37,7 +38,26 @@ Rectangle {
                 }
             }
 
+        TextInput{
+            id: input
+            width: 100
+            height: 28
+            text: focus ? '' : 'Enter a name of sound'
+            y: 10
+            x: 70
+            cursorVisible: false
+            maximumLength : 40
+            color: 'white'
+
         }
+
+
+
+
+
+        }
+
+
 
     }
 
